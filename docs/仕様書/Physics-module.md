@@ -1,14 +1,14 @@
 # PhysicsModule
 ## 1. 基本情報
 
-モジュール名: PhysicsModule
-バージョン: v0.1.0 
-担当者:決定次第記入
-作成日:7/8
+* モジュール名: PhysicsModule
+* バージョン: v0.1.0 
+* 担当者:決定次第記入
+* 作成日:7/8
 
 ## 2. 所属システム
-所属システム: InfinityMax:GameEngine
-上位システム: ゲームエンジン
+所属システム: InfinityMax:GameEngine\n
+上位システム: ゲームエンジン \n
 関連モジュール:
 * (後で記載)
 * (後で記載)

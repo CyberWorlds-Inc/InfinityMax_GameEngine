@@ -4,7 +4,7 @@
 モジュール名: MagicModule\
 バージョン: v0.1.0 (Draft)\
 担当者: (編集で記載)\
-作成日: (編集で記載)\
+作成日: (編集で記載)
 
 ## 2. 所属システム
 所属システム:
@@ -68,26 +68,21 @@ MagicRecoverySystem
 MagicConsumptionSystem
 → 魔力消費\
 MagicUnitSystem
-→ 魔力単位管理\
+→ 魔力単位管理
 
-6. 他モジュールとの連携
+## 6. 他モジュールとの連携
 
 （全モジュール完成後に記載）
 
-利用
-
+利用:\
 * TODO
 
-利用される
-
+利用される:\
 * TODO
 
-⸻
+## 7. データ
 
-7. データ
-
-保持する主要データ
-
+保持する主要データ:\
 * MagicDensity（空間魔力密度）
 * MagicAmount（保有マジカニウム量）
 * MaximumMagicAmount（最大保持量）
@@ -107,11 +102,15 @@ MagicUnitSystem
 * MagicGenerationRate（生成率）
 * MagicConsumptionRate（消費率）
 * MagicRecoveryRate（回復率）
-
-⸻
-
-8. API・公開関数
-
+なお、InformationValueにおいては以下のパラメータを最低限持つものとする
+```Java
+class InformationValue {
+    String attribute;   // 感情・怨念・記憶・意思などの種類
+    double value;       // 情報量
+}
+```
+## 8. API・公開関数
+```Java
 // ===== Density =====
 getMagicDensity()                     // 空間中のマジカニウム密度を取得する
 setMagicDensity()                     // 空間中のマジカニウム密度を設定する
@@ -155,47 +154,38 @@ isIonized()                           // イオン化しているか判定する
 // ===== Update =====
 updateMagic()                         // 魔力シミュレーションを更新する
 resetMagic()                          // 魔力データを初期化する
+```
 
-⸻
+## 9. イベント
+MagicTickEvent: 魔力シミュレーション更新時に発生する\
+MagicDensityChangedEvent: 空間魔力密度が変更された時に発生する\
+MagicAmountChangedEvent: 保有マジカニウム量が変更された時に発生する\
+MaximumMagicAmountChangedEvent: 最大保持量が変更された時に発生する\
+InformationValueAddedEvent: 情報値が追加された時に発生する\
+InformationValueRemovedEvent: 情報値が削除された時に発生する\
+AttributeAddedEvent: 属性が追加された時に発生する\
+AttributeRemovedEvent: 属性が削除された時に発生する\
+MagicReactionEvent: 魔術反応が発生した時に発生する\
+MagicOutputCalculatedEvent: 魔術出力の計算が完了した時に発生する\
+MagicConsumedEvent: マジカニウムが消費された時に発生する\
+MagicRecoveredEvent: マジカニウムが回復した時に発生する\
+MagicTransferredEvent: マジカニウムが移動した時に発生する\
+MagicStateChangedEvent: マジカニウムの状態が変化した時に発生する\
+MagicIonizedEvent: マジカニウムがイオン化した時に発生する\
+MagicNeutralizedEvent: イオン化が解除された時に発生する\
+MagicResetEvent: 魔力データが初期化された時に発生する\
 
-9. イベント
-
-MagicTickEvent: 魔力シミュレーション更新時に発生する
-MagicDensityChangedEvent: 空間魔力密度が変更された時に発生する
-MagicAmountChangedEvent: 保有マジカニウム量が変更された時に発生する
-MaximumMagicAmountChangedEvent: 最大保持量が変更された時に発生する
-InformationValueAddedEvent: 情報値が追加された時に発生する
-InformationValueRemovedEvent: 情報値が削除された時に発生する
-AttributeAddedEvent: 属性が追加された時に発生する
-AttributeRemovedEvent: 属性が削除された時に発生する
-MagicReactionEvent: 魔術反応が発生した時に発生する
-MagicOutputCalculatedEvent: 魔術出力の計算が完了した時に発生する
-MagicConsumedEvent: マジカニウムが消費された時に発生する
-MagicRecoveredEvent: マジカニウムが回復した時に発生する
-MagicTransferredEvent: マジカニウムが移動した時に発生する
-MagicStateChangedEvent: マジカニウムの状態が変化した時に発生する
-MagicIonizedEvent: マジカニウムがイオン化した時に発生する
-MagicNeutralizedEvent: イオン化が解除された時に発生する
-MagicResetEvent: 魔力データが初期化された時に発生する
-
-⸻
-
-10. 使用システム
+## 10. 使用システム
 
 （全システム完成後に記載）
 
-利用されるシステム
-
+利用されるシステム:\
 * TODO
 
-利用するシステム
-
+利用するシステム:\
 * TODO
 
-⸻
-
-11. 管理する単位(Unit)
-
+## 11. 管理する単位(Unit)
 * MagicDensity：Ma/m³（空間中のマジカニウム密度）
 * MagicAmount：Ma（保有マジカニウム量）
 * MagicOutput：MO（魔術出力）
@@ -206,16 +196,3 @@ MagicResetEvent: 魔力データが初期化された時に発生する
 * MagicPurity：%（純度）
 * MagicDecayRate：Ma/s（自然減衰率）
 * MagicRecoveryRate：Ma/s（回復率）
-
-⸻
-
-1つだけ追加を提案
-
-君の設定だと情報値クラスはかなり重要だから、データ構造を仕様書で固定してしまうのがおすすめ。
-
-class InformationValue {
-    String attribute;   // 感情・怨念・記憶・意思などの種類
-    double value;       // 情報量
-}
-
-さらに List<InformationValue> を持つようにすれば、一つのマジカニウムに「炎:0.8」「怒り:0.6」「光:0.2」のような複数の情報値を保持できる。これなら後から魔術式や錬金術、魔導機械を実装するときも拡張しやすい設計になる。

@@ -203,50 +203,50 @@ LeakCurrentSystem\
 ### 8. API・公開関数
 ```Java
 // 電圧
-getVoltage()                 // 電圧を取得する
-setVoltage()                 // 電圧を設定する
-calculateVoltage()           // 電圧を計算する
+getVoltage();                 // 電圧を取得する
+setVoltage();                // 電圧を設定する
+calculateVoltage();           // 電圧を計算する
 // 電流
-getCurrent()                 // 電流を取得する
-setCurrent()                 // 電流を設定する
-calculateCurrent()            // 電流を計算する
+getCurrent();                 // 電流を取得する
+setCurrent();                 // 電流を設定する
+calculateCurrent();            // 電流を計算する
 // 抵抗
-getResistance()              // 抵抗値を取得する
-setResistance()              // 抵抗値を設定する
-calculateResistance()        // 抵抗を計算する
+getResistance();              // 抵抗値を取得する
+setResistance();              // 抵抗値を設定する
+calculateResistance();        // 抵抗を計算する
 // 電力
-calculatePower()             // 電力を計算する
-getPower()                   // 電力を取得する
+calculatePower();             // 電力を計算する
+getPower();                   // 電力を取得する
 // 電力量
-calculateEnergy()            // 電力量を計算する
-getEnergy()                  // 電力量を取得する
+calculateEnergy();            // 電力量を計算する
+getEnergy();                  // 電力量を取得する
 // 回路
-createCircuit()              // 電気回路を作成する
-connectCircuit()             // 回路を接続する
-disconnectCircuit()          // 回路接続を解除する
-analyzeCircuit()             // 回路状態を解析する
+createCircuit();              // 電気回路を作成する
+connectCircuit();             // 回路を接続する
+disconnectCircuit();          // 回路接続を解除する
+analyzeCircuit();             // 回路状態を解析する
 // 交流
-calculateAC()                // 交流電気を計算する
-calculateFrequency()         // 周波数を計算する
-calculatePhase()             // 位相を計算する
+calculateAC();                // 交流電気を計算する
+calculateFrequency();         // 周波数を計算する
+calculatePhase();             // 位相を計算する
 // 三相交流
-calculateThreePhasePower()   // 三相交流電力を計算する
+calculateThreePhasePower();   // 三相交流電力を計算する
 // 発電
-generateElectricity()        // 電気を生成する
-consumeElectricity()         // 電気を消費する
+generateElectricity();        // 電気を生成する
+consumeElectricity();         // 電気を消費する
 // 現象
-calculateJouleHeat()         // ジュール熱を計算する
-calculateInduction()         // 電磁誘導を計算する
-calculateCapacitance()       // 静電容量を計算する
-calculateInductance()        // インダクタンスを計算する
+calculateJouleHeat();         // ジュール熱を計算する
+calculateInduction();         // 電磁誘導を計算する
+calculateCapacitance();       // 静電容量を計算する
+calculateInductance();        // インダクタンスを計算する
 // 安全
-checkOverVoltage()           // 過電圧を判定する
-checkOverCurrent()           // 過電流を判定する
-checkShortCircuit()          // 短絡を判定する
-checkLeakCurrent()           // 漏電を判定する
+checkOverVoltage();           // 過電圧を判定する
+checkOverCurrent();           // 過電流を判定する
+checkShortCircuit();          // 短絡を判定する
+checkLeakCurrent();           // 漏電を判定する
 // 更新
-updateElectricSystem()       // 電気システムを更新する
-resetElectricSystem()        // 電気状態を初期化する
+updateElectricSystem();       // 電気システムを更新する
+resetElectricSystem();        // 電気状態を初期化する
 ```
 
 ## 9. イベント

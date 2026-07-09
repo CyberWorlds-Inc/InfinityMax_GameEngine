@@ -110,48 +110,48 @@ class InformationValue {
 ## 8. API・公開関数
 ```Java
 // ===== Density =====
-getMagicDensity()                     // 空間中のマジカニウム密度を取得する
-setMagicDensity()                     // 空間中のマジカニウム密度を設定する
-addMagicDensity()                     // 密度を加算する
-removeMagicDensity()                  // 密度を減算する
-calculateMagicDensity()               // 密度を再計算する
+getMagicDensity();                     // 空間中のマジカニウム密度を取得する
+setMagicDensity();                     // 空間中のマジカニウム密度を設定する
+addMagicDensity();                     // 密度を加算する
+removeMagicDensity();                  // 密度を減算する
+calculateMagicDensity();               // 密度を再計算する
 // ===== Storage =====
-getMagicAmount()                      // 保有マジカニウム量を取得する
-setMagicAmount()                      // 保有量を設定する
-addMagicAmount()                      // 保有量を加算する
-removeMagicAmount()                   // 保有量を減算する
-getMaximumMagicAmount()               // 最大保持量を取得する
+getMagicAmount();                      // 保有マジカニウム量を取得する
+setMagicAmount();                      // 保有量を設定する
+addMagicAmount();                      // 保有量を加算する
+removeMagicAmount();                   // 保有量を減算する
+getMaximumMagicAmount();               // 最大保持量を取得する
 // ===== Information =====
-getInformationValues()                // 情報値一覧を取得する
-addInformationValue()                 // 情報値を追加する
-removeInformationValue()              // 情報値を削除する
-clearInformationValues()              // 情報値を全削除する
-hasInformationValue()                 // 指定した情報値を保持しているか判定する
+getInformationValues();                // 情報値一覧を取得する
+addInformationValue();                 // 情報値を追加する
+removeInformationValue();              // 情報値を削除する
+clearInformationValues();              // 情報値を全削除する
+hasInformationValue();                 // 指定した情報値を保持しているか判定する
 // ===== Attribute =====
-getAttributes()                       // 属性一覧を取得する
-addAttribute()                        // 属性を追加する
-removeAttribute()                     // 属性を削除する
-hasAttribute()                        // 属性を保持しているか判定する
+getAttributes();                       // 属性一覧を取得する
+addAttribute();                        // 属性を追加する
+removeAttribute();                     // 属性を削除する
+hasAttribute();                        // 属性を保持しているか判定する
 // ===== Reaction =====
-calculateMagicReaction()              // 魔術反応を計算する
-canMagicReaction()                    // 魔術反応可能か判定する
+calculateMagicReaction();              // 魔術反応を計算する
+canMagicReaction();                    // 魔術反応可能か判定する
 // ===== Output =====
-calculateMagicOutput()                // 魔術出力を計算する
-getMagicOutputCoefficient()           // 出力係数を取得する
-setMagicOutputCoefficient()           // 出力係数を設定する
+calculateMagicOutput();                // 魔術出力を計算する
+getMagicOutputCoefficient();           // 出力係数を取得する
+setMagicOutputCoefficient();           // 出力係数を設定する
 // ===== Consumption =====
-consumeMagic()                        // マジカニウムを消費する
-recoverMagic()                        // マジカニウムを回復する
+consumeMagic();                        // マジカニウムを消費する
+recoverMagic();                        // マジカニウムを回復する
 // ===== Transfer =====
-transferMagic()                       // マジカニウムを移動する
-canTransferMagic()                    // 移動可能か判定する
+transferMagic();                       // マジカニウムを移動する
+canTransferMagic();                    // 移動可能か判定する
 // ===== State =====
-getMagicState()                       // マジカニウムの状態を取得する
-setMagicState()                       // マジカニウムの状態を設定する
-isIonized()                           // イオン化しているか判定する
+getMagicState();                       // マジカニウムの状態を取得する
+setMagicState();                       // マジカニウムの状態を設定する
+isIonized();                           // イオン化しているか判定する
 // ===== Update =====
-updateMagic()                         // 魔力シミュレーションを更新する
-resetMagic()                          // 魔力データを初期化する
+updateMagic();                         // 魔力シミュレーションを更新する
+resetMagic();                          // 魔力データを初期化する
 ```
 
 ## 9. イベント

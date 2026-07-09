@@ -293,25 +293,25 @@ LeakCurrentEvent:
 
 ## 11. 管理する単位(Unit)
 * Voltage:
-V（ボルト）\
+V（ボルト）
 * Current:
-A（アンペア）\
+A（アンペア）
 * Resistance:
-Ω（オーム）\
+Ω（オーム）
 * Power:
-W（ワット）\
+W（ワット）
 * Energy:
-J（ジュール）\
+J（ジュール）
 * Frequency:
-Hz（ヘルツ）\
+Hz（ヘルツ）
 * Capacitance:
-F（ファラド）\
+F（ファラド）
 * Inductance:
-H（ヘンリー）\
+H（ヘンリー）
 * Conductance:
-S（ジーメンス）\
+S（ジーメンス）
 * Charge:
-C（クーロン）\
+C（クーロン）
 
 ## 12. 参考資料
 * [オームの法則](https://techweb.rohm.co.jp/product/circuit-design/electric-circuit-design/21859/)

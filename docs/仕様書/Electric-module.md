@@ -313,7 +313,7 @@ S（ジーメンス）\
 * Charge:
 C（クーロン）\
 
-12. 参考資料
+## 12. 参考資料
 * [オームの法則](https://techweb.rohm.co.jp/product/circuit-design/electric-circuit-design/21859/)
 * [キルヒホッフの法則](https://techweb.rohm.co.jp/product/circuit-design/electric-circuit-design/21777/)
 * [ジュールの法則](https://rikeilabo.com/joule-heat)

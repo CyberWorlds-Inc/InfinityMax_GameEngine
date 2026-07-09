@@ -71,13 +71,11 @@ MagicUnitSystem
 → 魔力単位管理
 
 ## 6. 他モジュールとの連携
-
 （全モジュール完成後に記載）
-
-利用:\
+利用:
 * TODO
 
-利用される:\
+利用される:
 * TODO
 
 ## 7. データ
@@ -173,16 +171,14 @@ MagicTransferredEvent: マジカニウムが移動した時に発生する\
 MagicStateChangedEvent: マジカニウムの状態が変化した時に発生する\
 MagicIonizedEvent: マジカニウムがイオン化した時に発生する\
 MagicNeutralizedEvent: イオン化が解除された時に発生する\
-MagicResetEvent: 魔力データが初期化された時に発生する\
+MagicResetEvent: 魔力データが初期化された時に発生する
 
 ## 10. 使用システム
-
 （全システム完成後に記載）
-
-利用されるシステム:\
+利用されるシステム:
 * TODO
 
-利用するシステム:\
+利用するシステム:
 * TODO
 
 ## 11. 管理する単位(Unit)

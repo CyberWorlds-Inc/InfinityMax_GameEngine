@@ -17,7 +17,7 @@ InfinityMax:GameEngine\
 * (後で記載)
 
 ## 3. モジュール概要
-MagicModuleは、InfinityMax世界に存在する**魔術元素「マジカニウム(Ma)」**を管理する基盤モジュールである。\
+MagicModuleは、InfinityMax世界に存在する**魔術元素マジカニウム(Ma)**を管理する基盤モジュールである。\
 本モジュールでは魔法そのものは扱わず、魔術を成立させるために必要な基礎データ・物理量・情報値・化学反応の判定を管理する。
 
 担当範囲:
@@ -80,7 +80,7 @@ MagicUnitSystem
 
 ## 7. データ
 
-保持する主要データ:\
+保持する主要データ:
 * MagicDensity（空間魔力密度）
 * MagicAmount（保有マジカニウム量）
 * MaximumMagicAmount（最大保持量）

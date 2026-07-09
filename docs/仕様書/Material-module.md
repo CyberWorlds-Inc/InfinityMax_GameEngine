@@ -254,7 +254,7 @@ AlloyCreatedEvent:
 PurityChangedEvent:
 純度が変化した時に発生する\
 MaterialPropertyChangedEvent:
-物質特性が変更された時に発生する\
+物質特性が変更された時に発生する
 
 ## 10. 使用システム
 現状:

@@ -130,14 +130,14 @@ LeakCurrentSystem\
 ## 6. 他モジュールとの連携
 
 利用:
-**PhysicsModule**\
+**PhysicsModule**
 
 使用内容:
 * ジュール熱による温度変化
 * 電気抵抗の温度依存
 * 発熱による物質変化
 
-**MaterialModule**\
+**MaterialModule**
 
 使用内容:
 * 導電率

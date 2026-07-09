@@ -289,4 +289,4 @@ Ma\
 MagicConductivity:
 MC\
 Purity:
-%\
+%

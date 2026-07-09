@@ -144,7 +144,7 @@ LeakCurrentSystem\
 * 抵抗率
 * 材料特性
 
-**DataModule**\
+**DataModule**
 
 使用内容:
 * 電気設備データ保存

@@ -1,66 +1,29 @@
-結論から言うと、InfinityMathModuleは作る価値あり。ただしJavaのMathクラスの上位互換ではなく「ゲームシミュレーション専用数学基盤」にするべき。
+# InfinityMathModule
 
-Java標準のjava.lang.Mathがあるのは事実。人類はありがたいことに平方根ぐらいは昔から計算できるようにしてくれている。文明の勝利。
+## 1. 基本情報
 
-ただし、InfinityMaxで必要なのは、
-
-Math.sqrt()
-Math.sin()
-Math.cos()
-
-みたいな単純計算ではなく、
-
-* 物理シミュレーション用
-* 電気計算用
-* 魔術計算用
-* ワールド計算用
-
-の共通計算ロジック。
-
-なので独立させる。
-
-⸻
-
-InfinityMathModule
-
-1. 基本情報
-
-モジュール名: InfinityMathModule
-
-バージョン: v0.1.0 (Draft)
-
-担当者: (編集で記載)
-
+モジュール名: InfinityMathModule\
+バージョン: v0.1.0 (Draft)\
+担当者: (編集で記載)\
 作成日: (編集で記載)
 
-⸻
-
-2. 所属システム
+## 2. 所属システム
 
 所属システム:
-
-InfinityMax:GameEngine
-
+InfinityMax:GameEngine\
 上位システム:
-
-ゲームエンジン
-
+ゲームエンジン\
 関連モジュール:
-
 * PhysicsModule
 * ElectricModule
 * MagicModule
 * MaterialModule
 * WorldEnvironmentModule
 
-⸻
+## 3. モジュール概要
 
-3. モジュール概要
-
-InfinityMathModuleは、InfinityMax内で使用される共通数学処理・数値解析機能を提供する基盤モジュールである。
-
-各モジュールが個別に計算処理を実装することを防ぎ、統一された数学APIを提供する。
-
+InfinityMathModuleは、InfinityMax内で使用される共通数学処理・数値解析機能を提供する基盤モジュールである。\
+各モジュールが個別に計算処理を実装することを防ぎ、統一された数学APIを提供する。\
 担当範囲:
 
 * 物理計算補助
@@ -79,9 +42,7 @@ InfinityMathModuleは、InfinityMax内で使用される共通数学処理・数
 * 物理法則
 * 魔術法則
 
-⸻
-
-4. 設計思想
+## 4. 設計思想
 
 * Java標準Mathで不足するゲームシミュレーション向け機能を提供する。
 * 全モジュールで同じ計算方法を使用する。
@@ -89,14 +50,10 @@ InfinityMathModuleは、InfinityMax内で使用される共通数学処理・数
 * 将来的な高度シミュレーションに対応する。
 * 計算式の重複実装を防止する。
 
-⸻
+## 5. 機能一覧
 
-5. 機能一覧
-
-BasicCalculationSystem
-
-→ 基本数学計算
-
+BasicCalculationSystem 
+→ 基本数学計算\
 機能:
 
 * 四則演算補助
@@ -104,15 +61,11 @@ BasicCalculationSystem
 * 範囲制限
 * 絶対値処理
 
-⸻
-
 VectorSystem
-
-→ ベクトル計算
-
+→ ベクトル計算\
 利用:
 
-PhysicsModule
+PhysicsModule\
 WorldEnvironmentModule
 
 機能:
@@ -122,23 +75,14 @@ WorldEnvironmentModule
 * 力計算
 * 方向計算
 
-⸻
-
-MatrixSystem
-
-→ 行列計算
-
+MatrixSystem → 行列計算\
 利用:
 
 * 座標変換
 * 物理計算
 
-⸻
-
 InterpolationSystem
-
-→ 補間計算
-
+→ 補間計算\
 利用:
 
 * 温度変化
@@ -150,16 +94,10 @@ InterpolationSystem
 * 線形補間
 * 曲線補間
 
-⸻
-
 UnitConversionSystem
-
-→ 単位変換
-
+→ 単位変換\
 利用:
-
-全モジュール
-
+全モジュール\
 機能:
 
 * 温度変換
@@ -167,12 +105,8 @@ UnitConversionSystem
 * エネルギー変換
 * 電力単位変換
 
-⸻
-
 NumericalAnalysisSystem
-
-→ 数値解析
-
+→ 数値解析\
 利用:
 
 PhysicsModule
@@ -185,12 +119,8 @@ ElectricModule
 * 収束計算
 * 微分近似
 
-⸻
-
 ProbabilitySystem
-
-→ 確率計算
-
+→ 確率計算\
 利用:
 
 MagicModule
@@ -201,25 +131,19 @@ WorldEnvironmentModule
 * 発生確率
 * ランダム分布
 
-⸻
-
 FormulaSystem
-
-→ 共通公式計算
-
+→ 共通公式計算\
 利用:
 
 PhysicsModule
 ElectricModule
 MagicModule
 
-⸻
-
-6. 他モジュールとの連携
+## 6. 他モジュールとの連携
 
 利用される
 
-PhysicsModule
+**PhysicsModule**
 
 使用:
 
@@ -227,7 +151,7 @@ PhysicsModule
 * ベクトル計算
 * 数値解析
 
-ElectricModule
+**ElectricModule**
 
 使用:
 
@@ -235,72 +159,60 @@ ElectricModule
 * 交流計算
 * 回路計算
 
-MagicModule
+**MagicModule**
 
 使用:
 
 * 魔術出力計算
 * 反応計算
 
-WorldEnvironmentModule
+**WorldEnvironmentModule**
 
 使用:
 
 * 環境補間
 * 気候計算
 
-MaterialModule
+**MaterialModule**
 
 使用:
 
 * 材料比較計算
 
-⸻
-
-7. データ
+## 7. データ
 
 保持する主要データ
 
-数学定数
+### 数学定数
 
 * PI
 * E
 * GravityConstant
 
-⸻
-
-計算精度
+### 計算精度
 
 * CalculationPrecision
 * FloatingErrorTolerance
 
-⸻
-
-ベクトル情報
+### ベクトル情報
 
 * Vector2
 * Vector3
 * Vector4
 
-⸻
-
-行列情報
+### 行列情報
 
 * Matrix2
 * Matrix3
 * Matrix4
 
-⸻
-
-単位情報
+### 単位情報
 
 * UnitType
 * ConversionRate
 
-⸻
-
-8. API・公開関数
-
+## 8. API・公開関数
+```
 // 基本
 clamp()
  // 数値を指定範囲内に制限する
@@ -337,106 +249,48 @@ randomRange()
 // 更新
 updateCalculation()
  // 計算処理を更新する
+```
 
-⸻
-
-9. イベント
+## 9. イベント
 
 CalculationErrorEvent:
-計算エラーが発生した時
+計算エラーが発生した時\
 PrecisionWarningEvent:
-計算精度不足を検出した時
+計算精度不足を検出した時\
 CalculationCompletedEvent:
-計算処理が完了した時
+計算処理が完了した時\
 UnitConversionEvent:
-単位変換が実行された時
+単位変換が実行された時\
 
-※数学処理は基本的にイベントを大量発生させるものではないため少なめ。
-
-⸻
-
-10. 使用システム
+## 10. 使用システム
 
 現状:
-
 なし
 
 （利用するシステム完成後に記載）
-
-⸻
-
 11. 管理する単位(Unit)
 
 Distance:
-m
+m\
 Time:
 s
 Velocity:
-m/s
+m/s\
 Acceleration:
-m/s²
+m/s²\
 Force:
-N
+N\
 Energy:
-J
+J\
 Power:
-W
+W\
 Temperature:
-K
+K\
 Pressure:
-Pa
+Pa\
 Voltage:
-V
+V\
 Current:
-A
+A\
 Resistance:
 Ω
-
-⸻
-
-削った方がいいもの
-
-君が一覧に出した中で、InfinityMathModuleには入れない方がいいもの。
-
-❌ 電圧計算
-❌ 電流計算
-❌ 魔力計算
-❌ 温度計算
-❌ 圧力計算
-❌ 密度計算
-
-これは全部それぞれの責務。
-
-理由:
-
-InfinityMath
-↓
-計算する道具
-Physics
-↓
-物理法則
-Electric
-↓
-電気法則
-Magic
-↓
-魔術法則
-
-だから。
-
-⸻
-
-逆にInfinityMathで確実に使うもの:
-
-✅ ベクトル
-✅ 補間
-✅ 単位変換
-✅ 数値解析
-✅ 誤差管理
-✅ 確率
-✅ 方程式処理
-✅ 行列
-
-この辺。
-
-この構成ならInfinityMathModuleは「Java Mathの代替」ではなく、InfinityMax世界の計算エンジン基盤になる。

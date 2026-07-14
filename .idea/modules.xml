@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/com.yuyuto.infinitymax_gameengine.main.iml" filepath="$PROJECT_DIR$/.idea/modules/com.yuyuto.infinitymax_gameengine.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/com.yuyuto.infinitymax_gameengine.test.iml" filepath="$PROJECT_DIR$/.idea/modules/com.yuyuto.infinitymax_gameengine.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/infinitymax_gameengine.iml" filepath="$PROJECT_DIR$/.idea/modules/infinitymax_gameengine.iml" />
+    </modules>
+  </component>
+</project>
